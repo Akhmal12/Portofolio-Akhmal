@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Akhmal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Akhmal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/mals.png" alt="Akhmal profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Akhmal</h1>
+        <p class="section__text__p2">Teknisi Mekatronika / Programmer GIS</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github_light.png"
+            src-light="./assets/github_light.png"
+            src-dark="./assets/github_dark.png"
+            alt="My github profile"
+            class="icon github-icon"
+            onclick="location.href='https://github.com/'"
+          />
+          <img
+          src="./assets/instagram_light.png"
+          src-light="./assets/instagram_light.png"
+          src-dark="./assets/instagram_dark.png"
+          alt="My Instagram profile"
+          class="icon instagram-icon"
+          onclick="location.href='https://instagram.com/ak.hml'"
+        />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/male.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience_light.png"
+                src-light="./assets/experience_light.png"
+                src-dark="./assets/experience_dark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Kepala Administrasi<br />Agustus 2021 – Januari 2022</p>
+              <p>&</p>
+              <p>Teknisi Mekatronika / Programmer GIS<br />Januari 2022 – Sekarang</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education_light.png"
+                src-light="./assets/education_light.png"
+                src-dark="./assets/education_dark.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Unniversitas Islam Kalimantan Muhammad Arsyad Al-banjari<br />Teknik Informatika<br />2017 –  2021<br />GPA : 3.33/4.00 </p>
+              <p>&</p>
+              <p>Badan Nasional Sertifikasi Profesi<br />Certification<br />Januari 2022 - Januari 2025<br /><b>Perancangan Basis Data Untuk Web</b></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Saya lulusan S1 Teknik Informatika yang memiliki spesialis dalam bidang pemerograman WEB.
+              Telah mendesain dan mengembangkan 5 sistem untuk meningkatkan efesiensi kerja.
+              Saya juga memiliki pengalaman di Geographic Information System (GIS) yaitu sebagai
+              teknisi mekatronika dan saya juga dapat mengoperasikan drone. Memiliki jiwa kepemimpinan, manajemen waktu yang baik,
+              dan komunikasi yang baik.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Dashboard GIS.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Dashboard GIS</h2>
+            <p> Dashboard GIS adalah aplikasi berbasis web yang menampilkan profil depertemen GIS, sekaligus menampilkan update kegiatan depertemen GIS.</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pengajuan verifikasi.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SI - Verifikasi</h2>
+            <p> SI - Verifikasi ini adalah aplikasi berbasis web untuk mempercepat pengajuan berkas user ke verifikator, aplikasi ini juga menggunakan notif Whatsapp untuk memberitahu user jika sudah diverifikasi.</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/E - Progress.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+          <h2 class="experience-sub-title project-title">E -Progres</h2>
+          <p> E - Progres ini adalah aplikasi berbasis web dibuat untuk pelaporan progres bulanan team yang berada dilapangan.</p>
+          <br>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/'"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/E - REPORT HO - REG I.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E - Report</h2>
+            <p> E - Report ini adalah aplikasi berbasis web dibuat untuk pelaporan kerja karyawan setiap harinya.</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Si - Inventory.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">SI - Inventory</h2>
+            <p> SI - Inventory ini adalah aplikasi berbasis web dibuat untuk pencatan sparepart dan barang keperluan drone.</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow_light.png"
+        src-light="./assets/arrow_light.png"
+        src-dark="./assets/arrow_dark.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+          src="./assets/instagram_light.png"
+          src-light="./assets/instagram_light.png"
+          src-dark="./assets/instagram_dark.png"
+          alt="My instagram profile"
+          class="icon instagram-icon"
+          onclick="location.href='https://instagram.com/'"
+        />
+        <p><a href="https://www.instagram.com">Instagram&nbsp;&nbsp;</a></p>
+      </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email_light.png"
+            src-light="./assets/email_light.png"
+            src-dark="./assets/email_dark.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Gmail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/whatsapp_light.png"
+            src-light="./assets/whatsapp_light.png"
+            src-dark="./assets/whatsapp_dark.png"
+            alt="My whatsapp profile"
+            class="icon whatsapp-icon"
+            onclick="location.href='https://whatsapp.com/'"
+          />
+          <p><a href="https://www.whatsapp.com">Whatsapp&nbsp;&nbsp;&nbsp;</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn&nbsp;</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Akhmal. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
